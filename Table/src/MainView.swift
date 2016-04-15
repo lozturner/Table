@@ -5,8 +5,10 @@ class MainView:CustomView {
     var fileWatcher:FileWatcher?
     override func resolveSkin() {
         super.resolveSkin()
-        createTable()
+
         container = addSubView(Container(1000,800,self,"main"))
+        
+        createTable()
     }
     /**
      *
@@ -27,18 +29,15 @@ class MainView:CustomView {
         }
         fileWatcher!.start()
         
-        
-       
-        
         let xml:NSXMLElement = FileParser.xml("~/Desktop/assets/xml/table.xml")
         //Swift.print("xml: " + "\(xml)")
         let node:Node = Node(xml)
         node
         
-        var table:Table = container.addSubView(Table(NaN,NaN,node,container))
-        TableModifier.selectRow(table,1);
+        let table:Table = container.addSubView(Table(NaN,NaN,node,container))
+        table
+        //TableModifier.selectRow(table,1);
+        
         // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
-        
-        
     }
 }
