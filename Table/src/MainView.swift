@@ -17,7 +17,7 @@ class MainView:CustomView {
         super.resolveSkin()
         
         
-        StyleManager.addStyle("Window #main{float:left;clear:left;padding-left:12px;padding-top:12px;}")
+        StyleManager.addStyle("Window #main{float:left;clear:left;padding-left:76px;padding-top:32px;}")
         container = addSubView(Container(1000,800,self,"main"))
         
         createTable()
@@ -29,7 +29,8 @@ class MainView:CustomView {
      *
      */
     func createTable(){
-        StyleManager.addStylesByURL("~/Desktop/ElCapitan/explorer/card.css")
+        //StyleManager.addStylesByURL("~/Desktop/ElCapitan/explorer/card.css")
+        
         
         
         
