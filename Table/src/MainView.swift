@@ -24,16 +24,10 @@ class MainView:CustomView {
         
 
     }
-    
     /**
      *
      */
     func createTable(){
-        //StyleManager.addStylesByURL("~/Desktop/ElCapitan/explorer/card.css")
-        
-        
-        
-        
         let url:String = "~/Desktop/ElCapitan/advance/table/table.css"
         StyleManager.addStylesByURL(url,true)
         
@@ -59,8 +53,5 @@ class MainView:CustomView {
         TableModifier.selectRow(table,1);
         
         // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
-        
-        
-        
     }
 }
