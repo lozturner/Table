@@ -79,7 +79,7 @@ class MainView:CustomView {
         
         let table:Table = container.addSubView(Table(190,120,node,container))
         table
-        //TableModifier.selectRow(table,1);
+        TableModifier.selectRow(table,1);
         
         // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
         
