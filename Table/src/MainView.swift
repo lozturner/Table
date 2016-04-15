@@ -1,4 +1,20 @@
 import Foundation
+class Person : Comparable {
+    let name : String
+    
+    init(name : String) {
+        self.name = name
+    }
+}
+
+func < (lhs: Person, rhs: Person) -> Bool {
+    return lhs.name < rhs.name
+}
+
+func == (lhs: Person, rhs: Person) -> Bool {
+    return lhs.name == rhs.name
+}
+
 
 class Human: Comparable, Equatable {
     let firstName: String
