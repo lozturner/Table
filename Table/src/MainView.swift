@@ -5,7 +5,7 @@ class MainView:CustomView {
     var fileWatcher:FileWatcher?
     override func resolveSkin() {
         super.resolveSkin()
-
+        StyleManager.addStyle("Window #main{float:left;clear:left;}")
         container = addSubView(Container(1000,800,self,"main"))
         
         createTable()
