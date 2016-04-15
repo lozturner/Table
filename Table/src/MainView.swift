@@ -12,7 +12,7 @@ class MainView:CustomView {
      *
      */
     func createTable(){
-        let url:String = "~/Desktop/ElCapitan/other/gradientpanel/gradientpanel.css"
+        let url:String = "~/Desktop/ElCapitan/advance/table/table.css"
         StyleManager.addStylesByURL(url,true)
         
         fileWatcher = FileWatcher([url.tildePath])
