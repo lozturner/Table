@@ -32,7 +32,11 @@ class MainView:CustomView {
         let sv = Human(firstName:"Steve", lastName: "Vai")
         var guitarists = [eva, jp,jh, sv]
         
-        guitarists.sortInPlace({ $0.firstName > $1.firstName })
+        guitarists.sortInPlace({$0.firstName > $1.firstName})
+        
+        for human in guitarists{
+            Swift.print("human.firstName: " + "\(human.firstName)")
+        }
         
         //guitarists.sortInPlace()//& is address of operator to use the adress of the value not the value it self
         //sort(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
