@@ -1,15 +1,5 @@
 import Foundation
 
-
-class Human {
-    let firstName: String
-    let lastName: String
-    init(firstName: String, lastName: String) {
-        self.firstName = firstName
-        self.lastName = lastName
-    }
-}
-
 class MainView:CustomView {
     var container:Container!
     var fileWatcher:FileWatcher?
