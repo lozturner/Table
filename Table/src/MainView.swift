@@ -16,7 +16,7 @@ class MainView:CustomView {
     override func resolveSkin() {
         super.resolveSkin()
         
-        StyleManager.addStylesByURL("~/Desktop/ElCapitan/basic/window/window.css")
+        
         StyleManager.addStyle("Window #main{float:left;clear:left;padding-left:12px;padding-top:12px;}")
         container = addSubView(Container(1000,800,self,"main"))
         
@@ -29,6 +29,10 @@ class MainView:CustomView {
      *
      */
     func createTable(){
+        StyleManager.addStylesByURL("~/Desktop/ElCapitan/explorer/card.css")
+        
+        
+        
         let url:String = "~/Desktop/ElCapitan/advance/table/table.css"
         StyleManager.addStylesByURL(url,true)
         
