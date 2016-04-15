@@ -1,4 +1,5 @@
 import Foundation
+
 class Human: Comparable, Equatable {
     let firstName: String
     let lastName: String
