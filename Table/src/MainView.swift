@@ -1,4 +1,12 @@
 import Foundation
+class Human: Comparable, Equatable {
+    let firstName: String
+    let lastName: String
+    init(firstName: String, lastName: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+    }
+}
 
 class MainView:CustomView {
     var container:Container!
