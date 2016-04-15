@@ -39,5 +39,10 @@ class MainView:CustomView {
         //TableModifier.selectRow(table,1);
         
         // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
+        
+        //continue here: add TitleBar Icons css
+        //Get rid of gradient in table 
+        
+        
     }
 }
