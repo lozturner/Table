@@ -28,20 +28,16 @@ class MainView:CustomView {
         fileWatcher!.start()
         
         
-        
-        var xml:XML = FileParser.xml(new File(File.applicationDirectory.url+"assets/xml/table.xml"));
-        var database:Database = new Database(xml);
-        var table:Table = tableSection.addChild(new Table(NaN,NaN,database,tableSection)) as Table;
-        TableModifier.selectRow(table,1);
-        // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
+       
         
         let xml:NSXMLElement = FileParser.xml("~/Desktop/assets/xml/table.xml")
         //Swift.print("xml: " + "\(xml)")
         let node:Node = Node(xml)
         node
-        //var table:Table = tableCard.addSubView(Table(NaN,NaN,database,tableCard))
-        //TableModifier.selectRow(table,1);
         
+        var table:Table = container.addSubView(Table(NaN,NaN,node,container))
+        TableModifier.selectRow(table,1);
+        // :TODO: TableParser.rowAt(0) should return an array with each the text from each row item
         
         
     }
