@@ -40,6 +40,11 @@ class MainView:CustomView {
             Swift.print("human.firstName: " + "\(human.firstName)")
         }
         
+        
+        //continue here: Check what you need again. Then make a similar case
+        
+        
+        
         //guitarists.sortInPlace()//& is address of operator to use the adress of the value not the value it self
         //sort(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
         //guitarists.reverse()
