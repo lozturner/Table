@@ -32,11 +32,11 @@ class MainView:CustomView {
         let sv = Human(firstName:"Steve", lastName: "Vai")
         var guitarists = [eva, jp,jh, sv]
         
-        sort(&guitarists)//& is address of operator to use the adress of the value not the value it self
-        sort(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
-        guitarists.reverse()
-        var sortedGuitarists = sorted(guitarists)
-        sorted(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
+        guitarists.sortInPlace()//& is address of operator to use the adress of the value not the value it self
+        //sort(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
+        //guitarists.reverse()
+        //var sortedGuitarists = sorted(guitarists)
+        //sorted(&guitarists) {$0.firstName < $1.firstName}//comparable protocol
         
 
     }
