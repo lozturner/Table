@@ -8,7 +8,15 @@ class MainView:CustomView {
         StyleManager.addStyle("Window #main{float:left;clear:left;padding-left:12px;padding-top:12px;}")
         container = addSubView(Container(1000,800,self,"main"))
         
-        createTable()
+        //createTable()
+        
+        testSorting()
+    }
+    /**
+     *
+     */
+    func testSorting(){
+        
     }
     /**
      *
