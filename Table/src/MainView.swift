@@ -34,7 +34,7 @@ class MainView:CustomView {
         let node:Node = Node(xml)
         node
         
-        let table:Table = container.addSubView(Table(NaN,NaN,node,container))
+        let table:Table = container.addSubView(Table(190,120,node,container))
         table
         //TableModifier.selectRow(table,1);
         
