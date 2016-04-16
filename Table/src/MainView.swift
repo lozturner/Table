@@ -6,13 +6,11 @@ class MainView:CustomView {
     override func resolveSkin() {
         super.resolveSkin()
         
-        
         StyleManager.addStyle("Window #main{float:left;clear:left;padding-left:76px;padding-top:32px;}")
         container = addSubView(Container(1000,800,self,"main"))
         
         createTable()
-        
-
+    
     }
     /**
      *
